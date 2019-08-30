@@ -15,3 +15,11 @@
 3. redux
 
 테스트는?
+
+
+### todo(~~완료~~)
+
+- ~~typescript, redux 세팅~~
+- redux + typescript
+- test코드 세팅
+- test + typescript + redux(가능?)
