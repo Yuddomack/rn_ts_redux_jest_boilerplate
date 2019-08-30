@@ -5,11 +5,18 @@ import {
     TextInput,
     Text,
 } from 'react-native';
-import { changeText } from '../../store/modules/EditorScreen';
+import { IProps, changeText } from '../../store/modules/EditorScreen';
 
-class EditorScreen extends Component{ // props, state에 대한 redux -> ts로 인터페이스를 받아와야할듯
+interface Props extends IProps {
 
-    constructor(props){
+}
+interface States {
+
+}
+
+class EditorScreen extends Component<Props, States>{ // props, state에 대한 redux -> ts로 인터페이스를 받아와야할듯
+
+    constructor(props: Props){
         super(props);
     }
 
