@@ -42,7 +42,7 @@ const mapStateToProps = state => ({
   
   // props 로 넣어줄 액션 생성함수
   const mapDispatchToProps = dispatch => ({
-    changeText: text => dispatch(changeText(text)),
+    changeText: (text: string) => dispatch(changeText(text)),
   });
 
 export default connect(
