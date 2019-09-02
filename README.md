@@ -26,3 +26,4 @@
 - test + typescript + redux(가능?)
 - 컨테이너와 프레젠테이셔널로 분리
 - hooks
+- 컨벤션 적용하기
