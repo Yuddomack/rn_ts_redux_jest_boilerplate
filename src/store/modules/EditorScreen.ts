@@ -20,11 +20,11 @@ type ActionTypes =
     | changeText;
 
 // 액션 생섬함수 정의
-export const changeText = (text: string) => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
+export const changeText = (text: string = "") => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
 
 // 초기상태 정의
 const initialState: IState = {
-    text: "asdf",
+    text: "",
 }; // state는 되도록 얕은 객체로
 
 // 리듀서 작성
