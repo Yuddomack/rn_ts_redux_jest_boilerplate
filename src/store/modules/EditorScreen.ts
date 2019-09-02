@@ -11,7 +11,7 @@ export interface IState{ // reducer의 return
 // 액션 타입 정의
 const CHANGE_TEXT = 'editor/CHANGE_TEXT'; // 나중에 포지션도 생각해야지(width height x y)
 
-export interface changeText {
+interface changeText {
     type: typeof CHANGE_TEXT
     text: string
 }
@@ -20,7 +20,7 @@ type ActionTypes =
     | changeText;
 
 // 액션 생섬함수 정의
-export const changeText = text => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
+export const changeText = (text: string) => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
 
 // 초기상태 정의
 const initialState: IState = {
