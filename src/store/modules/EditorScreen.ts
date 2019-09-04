@@ -1,7 +1,7 @@
 // 인터페이스
 export interface IProps { // 컴포넌트에 주입되는
     text: string
-    changeText: Function
+    onChangeText: Function
 }
 
 export interface IState{ // reducer의 return
@@ -26,7 +26,7 @@ type ActionTypes =
     | changeColor
 
 // 액션 생섬함수 정의
-export const changeText = (text: string = ""): ActionTypes => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
+export const onChangeText = (text: string = ""): ActionTypes => ({ type: CHANGE_TEXT, text }); // onChange니까 edit보단 change가 나을듯
 
 // 초기상태 정의
 export const initialState: IState = {
