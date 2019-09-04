@@ -1,7 +1,7 @@
 // "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
 //import counter, * as counterActions from './EditorScreen';
 
-import EditorReducer, { initialState, changeText } from './EditorScreen';
+import EditorReducer, { initialState, onChangeText } from './EditorScreen';
 // action creator로 묶기
 
 describe('Store - EditorScreen',() => {
@@ -11,7 +11,7 @@ describe('Store - EditorScreen',() => {
                 { type: 'editor/CHANGE_TEXT', text: "" },
             ];
             const actions = [
-                changeText()
+                onChangeText()
             ];
             expect(actions).toEqual(expectedActions);
         });
@@ -24,12 +24,12 @@ describe('Store - EditorScreen',() => {
         });
         
         it('change text to "qwer"', () => {
-            state = EditorReducer(state, changeText("qwer"));
+            state = EditorReducer(state, onChangeText("qwer"));
             expect(state).toHaveProperty('text', "qwer");
         });
 
         it('change text to "1000"', () => {
-            state = EditorReducer(state, changeText("1000"));
+            state = EditorReducer(state, onChangeText("1000"));
             expect(state).toHaveProperty('text', "1000");
         });
     })
