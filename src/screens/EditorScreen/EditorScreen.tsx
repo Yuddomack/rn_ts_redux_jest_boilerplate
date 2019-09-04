@@ -14,13 +14,13 @@ interface Props extends IProps {
 
 const EditorScreen: React.SFC<Props> = ({
     text,
-    changeText
+    onChangeText
 }) => {
     return (
         <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
             <Text>에디터</Text>
             <Text>{text}</Text>
-            <TextInput style={{borderWidth: 1}} onChangeText={changeText.bind(this)} value={this.props.text}/>
+            <TextInput style={{borderWidth: 1}} onChangeText={onChangeText.bind(this)} value={this.props.text}/>
         </View>
     )
 }
