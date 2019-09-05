@@ -8,7 +8,7 @@ import {
     Text,
 } from 'react-native';
 import EditorScreen from './EditorScreen';
-import { IProps, onChangeText } from '../../store/modules/EditorScreen';
+import { IProps, actionCreators } from '../../store/modules/EditorScreen';
 
 interface Props extends IProps {
 
@@ -47,7 +47,7 @@ const mapStateToProps = state => ({
   
   // props 로 넣어줄 액션 생성함수
   const mapDispatchToProps = dispatch => ({
-    changeText: (text: string) => dispatch(onChangeText(text)),
+    changeText: (text: string) => dispatch(actionCreators.onChangeText(text)),
   });
 
 export default connect(
