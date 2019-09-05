@@ -1,8 +1,12 @@
 // "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
 //import counter, * as counterActions from './EditorScreen';
 
-import EditorReducer, { initialState, onChangeText } from './EditorScreen';
+import EditorReducer, { initialState, actionCreators } from './EditorScreen';
 // action creator로 묶기
+
+const {
+    onChangeText
+} = actionCreators;
 
 describe('Store - EditorScreen',() => {
     describe('actions', () => {
