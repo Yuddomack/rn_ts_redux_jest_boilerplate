@@ -27,6 +27,6 @@ createActions를 쓸 것 인가..
 - ~~redux + typescript~~
 - ~~test코드 세팅~~
 - test + typescript + redux(가능?) -> store test code는 세팅(상태 테스트) -> 컴포넌트 테스트
-- 컨테이너와 프레젠테이셔널로 분리
+- ~~컨테이너와 프레젠테이셔널로 분리~~
 - hooks
 - 컨벤션 적용하기
