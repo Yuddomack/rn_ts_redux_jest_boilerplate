@@ -30,3 +30,4 @@ createActions를 쓸 것 인가..
 - ~~컨테이너와 프레젠테이셔널로 분리~~
 - hooks
 - 컨벤션 적용하기
+- react-icons d.ts 만들기 및 적용하기
